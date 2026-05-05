@@ -1,0 +1,43 @@
+.categories-bar {
+  position: fixed;
+  left: 72px;
+  right: 0;
+  top: 55px;
+  height: 56px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  padding-left: 24px;
+  padding-right: 24px;
+  z-index: 150;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.categories-bar::-webkit-scrollbar {
+  display: none;
+}
+
+.category-chip {
+  background-color: rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 6px 12px;
+  border-radius: 8px;
+  margin-right: 12px;
+  font-family: Roboto, Arial;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.15s;
+}
+
+.category-chip:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.category-chip.active {
+  background-color: black;
+  color: white;
+  border: none;
+}
